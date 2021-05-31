@@ -8,6 +8,7 @@ namespace App\model;
 
 use mysqli;
 
+
 define('HOST','localhost');
 define('DBNAME','sinergia');
 define('USER','root');
