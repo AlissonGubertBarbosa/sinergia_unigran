@@ -17,7 +17,15 @@ class empresa
     private $emailEmpresarial;
     private $observacao;
 
-    public __construct($cnpj = null, $nomeResponsavel = null, $endereco = null, $telefone =null, $emailEmpresarial = null, $observacao = null)
+    public __construct ($cnpj = null, $nomeResponsavel = null, $endereco = null, $telefone =null, $emailEmpresarial = null, $observacao = null){
+        $this -> cnpj = $cnpj;
+        $this -> nomeResponsavel = $nomeResponsavel;
+        $this -> endereco = $endereco;
+        $this -> telefone = $telefone;
+        $this -> emailEmpresaril = $emailEmpresarial;
+        $this -> observacao = $observacao;
+        
+    }
 
     public function setCnpj($cnpj) {
         $this -> cnpj = $cnpj;
