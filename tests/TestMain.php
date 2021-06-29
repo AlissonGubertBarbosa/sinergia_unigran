@@ -11,14 +11,14 @@ use PHPUnit\Framework\TestCase;
 
 class TestMain extends TestCase
 {
-    public function testFormataCNPJ(){
+    public function validaCNPJ(){
         $validador = new Validador();
         $this->assertRegExp("\d{2}.?\d{3}.?\d{3}/?\d{4}-?\d{2}",$validador->formataCNPJ(00000000000000));
     }
 
     function validaCPF($cpf) {
         $cpf = preg_replace( '/[^0-9]/is', '', $cpf );
-         
+        
         if (strlen($cpf) != 11) {
             return false;
         }
